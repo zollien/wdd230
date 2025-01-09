@@ -1,0 +1,44 @@
+body {
+    display: grid;
+
+    grid-template: auto auto auto auto auto;
+}
+
+header {
+    background: lightpink;
+    padding: 2rem;
+    grid-column: 1 / 6;
+}
+
+.left-sidebar {
+    background: coral;
+    grid-column: 1 / 5;
+    height: 40vh;
+    /*viewport height moved out of body so that the Main Content area ius 40% of available viewport height.*/
+}
+
+main {
+    background: rgb(205, 236, 205);
+    grid-column: 1 / 6;
+    padding: 2rem;
+    text-decoration-color: #000;
+}
+
+.right-sidebar {
+    background: yellow;
+    grid-column: 5 / 6;
+    text-decoration-color: #000;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 6;
+    text-decoration-color: #000;
+}
+
+.left-sidebar,
+.right-sidebar {
+    padding: 1rem;
+}
