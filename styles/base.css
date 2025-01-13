@@ -6,7 +6,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 100px 40px 1fr 100px;
+    grid-template-rows: 100px 40px 1fr 200px;
     grid-template-areas:
         "header header header"
         "nav nav nav"
@@ -36,7 +36,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "header  header"
+        "header header"
 }
 
 .container .header .image {
@@ -64,7 +64,7 @@
 }
 
 a:hover {
-    background-color: steelblue;
+    background-color: #4682b4;
     font-size: 18px;
     padding: 10px;
 }
@@ -72,15 +72,15 @@ a:hover {
 /* Stablish the style for grid-area: main.content */
 .main-content {
     grid-area: main-content;
-    background-color: lightgray;
+    background-color: #d3d3d3;
     padding: 10px;
-    height: 50vh;
+    height: 70vh;
 }
 
-/* Grid-area: aside */
+/* Grid-area: aside NOT USED*/
 .aside {
     grid-area: aside;
-    background-color: white;
+    background-color: ffffff;
     padding: 10px;
 }
 
@@ -125,7 +125,7 @@ section {
     color: #000000
 }
 
-section .headers {
+section .card {
     max-width: 100%;
     margin: 1rem;
     border: 1px solid rgb(252, 250, 250);
