@@ -11,52 +11,90 @@
         content="WDD230 - Web Frontend Development - Zollien Dove - Course assignment portal: WDD230 Github Repository">
     <title>Zollien Dove - WDD230 - Web Frontend Development</title>
 
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.csscss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Zollien Dove</h1>
-        <img src="images/profile.jpg" alt="Profile Picture Zi-2025." width="200" />
+    <div class="container">
 
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="lesson3/chamber-site-plan.html">Site Plan</a>
-        <a href="/chamber">Chamber/</a>
-        <a href="positioning.html">Positioning Activity</a>
-        <a href="BYUI.edu">Personal Website</a>
-        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
-    </nav>
+        <header class="header">
+            <!--div inside header-->
+            <div class="header">
+                <div class="image"><img src="profile.jpg" alt="Profile Picture Zi-2025."></div>
+                <div class="text">
+                    <h1>Zollien Dove</h1>
 
-    <main>
-        <h2>WD230: Web Frontend Development</h2>
-        <section class="" card>
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="1.html">1</a></li>
-                <li><a href="2.html">2</a></li>
-                <li><a href="3.html">3</a></li>
-            </ul>
-        </section>
-        <section class="" card>
-            <h3>Information</h3>
-            <ul>
-                <li><a href="a.html">a</a></li>
-                <li><a href="b.html">b</a></li>
-                <li><a href="c.html">c</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Zollien Dove. England, United Kingdom.</p>
-        <img src="images/icon-ukflag-pexels-355704-968299.jpg" alt="United Kingdom Flag - crumpled." width="200" />
-        <p id="demo">Last Modified:</p>
-        <script>const date = new Date(document.lastModified);
-            document.getElementById("demo").innerHTML = date;
-        </script>
-    </footer>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="lesson3/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber">Chamber</a>
+            <a href="positioning.html">Positioning Activity</a>
+            <a href="BYUI.edu">Personal Website</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+        </nav>
+
+        <main class="main-content">
+            <h2>WD230: Web Frontend Development</h2>
+            <hr class="solid">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01: <a href="home.html">Home Page</a></li>
+                    <li>02: <a href="02.html">2</a></li>
+                    <li>03: <a href="03.html">3</a></li>
+                    <li>04: <a href="04.html">4</a></li>
+                    <li>05: <a href="05.html">5</a></li>
+                    <li>06: <a href="06.html">6</a></li>
+                    <li>07: <a href="07.html">7</a></li>
+                    <li>08: <a href="08.html">8</a></li>
+                    <li>09: <a href="09.html">9</a></li>
+                    <li>10: <a href="10.html">10</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+
+                <ul>
+                    <li>London, England</li>
+                    <li>Weather Information</li>
+                    <li>Page Visits</li>
+                </ul>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p>&copy;<span id="Year"></span> Zollien Dove. England, United Kingdom.</p>
+
+            <img src="icon-ukflag-pexels-355704-968299.jpeg" alt="United Kingdom Flag.">
+            <p>Last Modification: <span id="LastModified"></span> </p>
+            <!-- span is a place holder for the date to go into-->
+            <script>
+                // Display the last modified date
+                const Year = new Date().getFullYear();
+                document.getElementById("Year").textContent = Year;
+
+                const lastModified = document.lastModified;
+                document.getElementById("LastModified").textContent = lastModified;
+
+                // Display the current year
+
+            </script><!--no knowlegde yet of how to put this script into getdates.js as a function-->
+        </footer>
+
+
+    </div>
 </body>
 
 </html>

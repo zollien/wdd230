@@ -1,0 +1,170 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Grid layout containter - Grid-template-areas to span columns defined by grid-template-columns property and rows via grid-template-rows */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 40px 1fr 100px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main-content main-content main-content"
+        "footer footer footer"
+
+}
+
+/* Grid-area: header */
+.header {
+    grid-area: header;
+
+    background-color: #171f5c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 80px;
+}
+
+.header img {
+    max-width: 50px;
+}
+
+
+/* Grid-area: header - container within header */
+.container .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header  header"
+}
+
+.container .header .image {
+    align-self: center;
+}
+
+.container .header .text {
+    text-align: center;
+}
+
+
+/* Grid-area: nav */
+.nav {
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: steelblue;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Stablish the style for grid-area: main.content */
+.main-content {
+    grid-area: main-content;
+    background-color: lightgray;
+    padding: 10px;
+    height: 50vh;
+}
+
+/* Grid-area: aside */
+.aside {
+    grid-area: aside;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Grid-area: footer */
+.footer {
+    grid-area: footer;
+    background-color: #171f5c;
+    ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 140px;
+}
+
+.footer img {
+    max-width: 50px;
+    border: #ffffff 5px;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+ul .center {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+section {
+    max-width: 100%;
+    margin: 1rem;
+    border: 1px solid rgb(252, 250, 250);
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #000000
+}
+
+section .headers {
+    max-width: 100%;
+    margin: 1rem;
+    border: 1px solid rgb(252, 250, 250);
+    padding: 1rem;
+    background-color: #950a0a;
+    color: #ffffff;
+
+}
+
+section .img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    border: 4px solid #950a0a;
+    width: 125px;
+    height: auto;
+}
+
+.section .card {
+    text-align: center;
+}
+
+/*
+section .container {}*/
+
+/* Main - container within section */
+/* 
+.container .section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "h3"
+
+}
+
+.container .section .image {
+    align-self: center;
+}
+
+.container .section .text {
+    text-align: center;
+}
+*/
