@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="scripts/getdates.js"></script>
+
 </head>
 
 <body>
@@ -35,13 +35,15 @@
         </header>
 
         <nav class="nav">
-            <a href="#">Home</a>
-            <a href="lesson3/chamber-site-plan.html">Site Plan</a>
-            <a href="chamber">Chamber</a>
-            <a href="positioning.html">Positioning Activity</a>
-            <a href="BYUI.edu">Personal Website</a>
-            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="lesson3/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber">Chamber</a></li>
+                <li><a href="positioning.html">Positioning Activity</a></li>
+                <li><a href="BYUI.edu">Personal Website</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+            </ul>
         </nav>
 
         <main class="main-content">
@@ -80,7 +82,7 @@
             <img src="images/icon-ukflag-pexels-355704-968299.jpg" alt="United Kingdom Flag.">
             <p>Last Modification: <span id="LastModified"></span> </p>
             <!-- span is a place holder for the date to go into-->
-            <script>
+            <!--<script>
                 // Display the last modified date
                 const Year = new Date().getFullYear();
                 document.getElementById("Year").textContent = Year;
@@ -90,11 +92,13 @@
 
                 // Display the current year
 
-            </script><!--no knowlegde yet of how to put this script into getdates.js as a function-->
+            </script>-->
+            <!--no knowlegde yet of how to put this script into getdates.js as a function-->
         </footer>
 
 
     </div>
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
